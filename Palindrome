@@ -1,0 +1,96 @@
+import java.util.*;
+public class demo {
+    /* // String is palindrome or not
+    public static void main(String args[]) {
+        String str = "noomn";
+        System.out.println(isPalindrome(str));
+
+    }
+
+    public static boolean isPalindrome(String s) {
+        for (int i = 0; i < s.length()/2; i++) {
+            if (s.charAt(i) != s.charAt(s.length() - i - 1)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+     */
+  /* // Number is palindrome or not 
+  public static void main(String args[])
+    {
+        int n=12321,r,rev=0;
+        int m=n;
+        while(n>0)
+        {
+           r = n % 10;
+           rev = rev*10 + r;
+           n = n/10;
+        }
+        System.out.println(rev);
+        if(m == rev)
+        {
+            System.out.println("Palindrome");
+        }
+        else
+        {
+            System.out.println("Not");
+        }
+    }
+
+   */
+   /*// Reverse a number
+   public static void main(String args[])
+    {
+        int num = 12345 , r,rev=0;
+        while(num>0)
+        {
+            r = num%10;
+            rev = rev *10 +r;
+            num = num/10;
+
+        }
+        System.out.println(rev);
+    }
+
+    */
+   /* //reverse a String
+   public static void main(String[] args)
+    {
+        String input = "Geeks for Geeks";
+
+        StringBuilder input1 = new StringBuilder();
+        input1.append(input);
+        input1.reverse();
+
+        // print reversed String
+        System.out.println(input1);
+    }
+
+    */
+   /*// Array is palindrome or not
+   public static boolean isPalindrome(int[] array, int startIndex, int endIndex) {
+        // if array is empty or has 1 element, it is palindrome
+        if (array.length == 0 || array.length == 1)
+            return true;
+        // check if start index is greater than end index, which means
+        // whole array has been checked
+        if (startIndex >= endIndex)
+            return true;
+        // check if element from left is not equal to element from last,
+        // then array is not palindrome
+        if (array[startIndex] != array[endIndex])
+            return false;
+        // check for palindrome with start index incremented and end index
+        // decreased by 1
+        return isPalindrome(array, startIndex + 1, endIndex - 1);
+
+    }
+    public static void main(String args[])
+    {
+        int array[] = {1,2,3,2,13};
+        System.out.println(isPalindrome( array,0,4));
+    }
+
+    */
